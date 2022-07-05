@@ -23,6 +23,19 @@ def sum_lists(ll_a, ll_b):
     return ll
 
 
+def sum_lists_recursive(ll_a, ll_b):
+    remainder = 0
+
+    def helper(a_node, b_node, carry):
+        value = carry
+        if a_node and b_node and carry == 0:
+            return None
+        if a_node:
+            va
+
+    return helper(ll_a.head, ll_b.head, remainder)
+
+
 # this solution does not pass tests
 # def sum_lists_followup(ll_a, ll_b):
 #     # Pad the shorter list with zeros

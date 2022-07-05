@@ -1,8 +1,9 @@
-from chapter_02.linked_list import LinkedList
+from linked_list import LinkedList
 
 
 def partition(ll, x):
     current = ll.tail = ll.head
+    # current = current.next
 
     while current:
         next_node = current.next
@@ -21,8 +22,7 @@ def partition(ll, x):
 
 
 def example():
-
-    ll = LinkedList.generate(10, 0, 99)
+    ll = LinkedList.generate(4, 0, 125)
     print(ll)
     partition(ll, ll.head.value)
     print(ll)

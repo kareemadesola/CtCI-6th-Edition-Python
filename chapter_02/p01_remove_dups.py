@@ -1,6 +1,6 @@
 import time
 
-from chapter_02.linked_list import LinkedList
+from linked_list import LinkedList
 
 
 def remove_dups(ll):
@@ -75,3 +75,5 @@ def example():
 
 if __name__ == "__main__":
     example()
+    test_remove_dupes()
+    test_remove_dupes()
